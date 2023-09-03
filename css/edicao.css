@@ -1,0 +1,270 @@
+
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap');
+
+@font-face {
+    font-family: Roboto;
+    src: url(../font/Roboto/Roboto-Regular.ttf)
+    format("truetype");
+}
+
+@font-face {
+    font-family: Comfortaa;
+    src: url(../font/Comfortaa/Comfortaa-Regular.ttf)
+    format("truetype");
+}
+
+@font-face {
+    font-family: Pacifico;
+    src: url(../font/Pacifico/Pacifico-Regular.ttf)
+    format("truetype");
+}
+
+@font-face {
+    font-family: AmaticSC;
+    src: url(../font/Amatic_SC/AmaticSC-Regular.ttf)
+    format("truetype");
+}
+
+@font-face {
+    font-family: Caveat;
+    src: url(../font/Caveat/Caveat-Regular.ttf)
+    format("truetype");
+}
+
+@font-face {
+    font-family: Lexend;
+    src: url(../font/Lexend/Lexend-Regular.ttf)
+    format("truetype");
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url(../font/Oswald/Oswald-Regular.ttf)
+    format("truetype");
+}
+
+@font-face {
+    font-family: ZenDots;
+    src: url(../font/Zen_Dots/ZenDots-Regular.ttf)
+    format("truetype");
+}
+
+@font-face {
+    font-family: Lobster;
+    src: url(../font/Lobster/Lobster-Regular.ttf)
+    format("truetype");
+}
+
+@font-face {
+    font-family: Lora;
+    src: url(../font/Lora/Lora-Regular.ttf)
+    format("truetype");
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../font/Montserrat/)
+    format("truetype");
+}
+
+@font-face {
+    font-family: MontserratAlternates;
+    src: url(../font//Montserrat_Alternates/MontserratAlternates-Regular.ttf)
+    format("truetype");
+}
+
+@font-face {
+    font-family: Playfair;
+    src: url(../font/Playfair_Display/PlayfairDisplay-Regular.ttf)
+    format("truetype");
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(../font/Nunito/Nunito-Regular.ttf)
+    format("truetype");
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 20vw 60vw 20vw;
+    grid-template-rows: 8vh 6vh 80vh 6vh;
+    grid-template-areas: "ht ht ht"
+                         "al hb ar"
+                         "al m ar"
+                         "f f f";
+}
+
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: left;
+}
+
+.header_t {
+    grid-area: ht;
+}
+
+.header_b{
+    grid-area: hb;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.aside_left {
+    grid-area: al;
+}
+
+.main {
+    grid-area: m;
+}
+
+.aside_right {
+    grid-area: ar;
+}
+
+.footer {
+    grid-area: f;
+}
+
+div.container-fluid {
+    background-color: #ffc107;
+
+}
+
+button.navbar-toggler {
+    background-color: #ffffff8c;
+}
+
+.navbar-brand {
+    color: rgb(255 255 255 / 90%);
+}
+
+div.novo-texto {
+    margin: 90px;
+}
+
+#text_editing {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.div_text_editing {
+    width: 33%;
+    display: block;
+}
+
+input#textname.form-control {
+    width: 15%;
+    height: 80%;
+}
+
+a.navbar-brand {
+    margin: 0 16px 0 10px;
+}
+
+.form-control {
+    display: inline-block;
+}
+
+input#btnBold.form-control {
+    width: 65px;
+}
+
+input#btnItalic.form-control {
+    width: 65px;
+}
+
+input#btnUnderline.form-control {
+    width: 100px;
+}
+
+input#btnSize_less.form-control {
+    width: 15%;
+}
+
+input#btnSize_more.form-control {
+    width: 15%;
+}
+
+input#fontSize.form-control {
+    width: 20%;
+}
+
+input#text_color_editing.form-control {
+    width: 20%;
+    padding: 5px;
+    margin-left: 5%;
+}
+
+select#input_font.form-control{
+    width: 60%;
+}
+
+div.biu {
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+}
+
+input#btnBold.form-control {
+    margin: 3px;
+}
+
+input#btnItalic.form-control {
+    margin: 3px;
+}
+
+input#btnUnderline.form-control {
+    margin: 3px;
+}
+
+div.div_fontSize {
+    display: flex;
+    justify-content: center;
+}
+
+nav.navbar.navbar-expand-lg.navbar-dark {
+    background-color: #ffc107;
+}
+
+button.navbar-toggler {
+    margin: 0 10px 0 0;
+}
+
+a.navbar-brand {
+    margin: 0 16px 0 10px;
+}
+
+.container-fluid {
+    justify-content: space-between !important;
+}
+
+nav.navbar.fixed-top {
+    background: #ffc107 !important;
+}
+
+
+
